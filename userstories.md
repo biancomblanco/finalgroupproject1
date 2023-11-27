@@ -46,7 +46,7 @@ Result: Annetta will get a welcome letter giving helpful links, useful informati
 
 User Story 4
 
-Annetta just finished joining our loyalty rewards program and is interested how does the rewards program work.
+Annetta just finished joining our loyalty rewards program and is interested on how does the rewards program work.
 
 Action: Annetta clicks “Community Program” hyperlink which guides the user to a page describing what the user should be able to get from joining the loyalty community.
 
@@ -78,3 +78,13 @@ Iris is intrigued about the Café Casero ViBi and wants to learn more about the 
 Action: Iris clicks on the hyperlink titled “About Us”, this will open a page showcasing partnerships we have done and our company’s mission statement and values.
 
 Result: Iris better identifies with Café Casero ViBi and now is more loyal to what the company has to offer.
+
+Content Epic:
+
+User Story 1
+
+Jacob wants to know what Cafe Casero ViBi has to offer and wants to puruse the catalog of items they have offered.
+
+Action: Jacob clicks the link to a new webpage that has all menu items such as coffee, bulk beans, merchandise, etc.
+
+Result: Jacob sees all offered items and is easily able to call a local store to place an order for pickup.

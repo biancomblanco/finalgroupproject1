@@ -15,3 +15,5 @@ Link to User Stories [here](/business_analysis/userstories.md)
 Link to Active Figma Design [here](https://www.figma.com/file/nQduQfEDFPN8rPW4r6REMq/IS601-FinalProject-ViBi?type=design&node-id=1%3A2&mode=design&t=GKVvaG5FJPGdhrk2-1)
 
 Link to Figma Design Check Point 1 [here](/business_analysis/figma_design1.md)
+
+Link to Vecel - deployment [here](https://finalgroupproject1.vercel.app/)

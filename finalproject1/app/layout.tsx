@@ -7,6 +7,7 @@ import { Navbar } from "@/components/navbar";
 import clsx from "clsx";
 import UserTable from "@/components/UserTable";
 import InputF from "@/components/InputF";
+import NewsLetter from "@/components/NewsLetter";
 
 
 export const metadata: Metadata = {
@@ -43,12 +44,12 @@ export default function RootLayout({
 				<Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
 					<div className="relative flex flex-col h-screen">
 						<Navbar />
-						<main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
+						<main className="light text-foreground bg-background container mx-auto max-w-7xl pt-16 px-6 flex-grow">
 							{children}
 						</main>
-						<footer className="w-full flex items-center justify-center py-3">
+						<footer className="dark text-foreground bg-background w-full flex items-center justify-center py-3">
 							<UserTable />
-							<InputF />
+							<NewsLetter />
 						</footer>
 					</div>
 				</Providers>

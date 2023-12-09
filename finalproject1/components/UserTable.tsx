@@ -4,7 +4,7 @@ import {Table, TableHeader, TableColumn, TableBody, TableRow, TableCell} from "@
 export default function UserTable() {
   return (
     
-    <Table hideHeader removeWrapper aria-label="Example static collection table">
+    <Table className="dark" hideHeader removeWrapper aria-label="Example static collection table">
       <TableHeader>
         <TableColumn>NAME</TableColumn>
         <TableColumn>ROLE</TableColumn>
@@ -38,9 +38,9 @@ export default function UserTable() {
         </TableRow>
         <TableRow key="5">
           <TableCell className="font-column">Gift Cards</TableCell>
-          <TableCell></TableCell>
+          <TableCell>-</TableCell>
           <TableCell className="font-column">Twitter</TableCell>
-          <TableCell></TableCell>
+          <TableCell>-</TableCell>
         </TableRow>
       </TableBody>
     </Table>

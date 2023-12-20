@@ -18,7 +18,7 @@ export const About = () => {
                 <div className="relative col-span-6 md:col-span-4">
 
                     <Image
-                        src="/about-image.png"
+                        src="/about-us-img.webp"
                         width={378}
                         height={456}
                         alt="about picture"

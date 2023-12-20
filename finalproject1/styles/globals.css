@@ -6,9 +6,33 @@
 .font-head{
     font-family: 'Lucida Handwriting';
 }
+.font-head2{
+  font-family: 'Lucida Handwriting';
+  font-size: 1.0rem;
+  color: black;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  text-align: center; 
+
+}
+
+.font-head3{
+  font-family: 'Lucida Handwriting';
+  font-size: 1.5rem;
+  color: black;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  text-align: center; 
+
+}
 
 .font-column{
     font-family: 'Crimson Text';
+}
+
+.modalBodyScroll {
+  max-height: 400px; /* Ajusta la altura máxima según tus necesidades */
+  overflow-y: auto;
 }
 
 /* styles/global.css */

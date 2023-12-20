@@ -21,7 +21,7 @@ export const Reward = () => {
 			<div className="relative col-span-6 md:col-span-4">
 				
 				<Image
-					src="/coffeecup.png"
+					src="/rewards-image.webp"
 					width={338}
 					height={662}
 					alt="reward picture"

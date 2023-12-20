@@ -30,7 +30,7 @@ export const Community = () => {
                 <div className="relative col-span-6 md:col-span-4">
 
                     <Image
-                        src="/happy.png"
+                        src="/community-image.webp"
                         width={637}
                         height={378}
                         alt="community picture"

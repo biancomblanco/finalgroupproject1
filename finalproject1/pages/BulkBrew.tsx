@@ -7,7 +7,7 @@ const BulkBrew = () => {
       <h1 className="text-2xl font-bold text-center text-white mb-4">Bulk Brew Coffee Options</h1>
       
       <p className="mb-4 text-white">
-        Welcome to our selection of bulk brew coffee. At [Your Coffee Shop Name], we take pride in offering high-quality coffee options for businesses, events, and coffee lovers who wish to enjoy our unique flavors in the comfort of their homes or workplaces.
+        Welcome to our selection of bulk brew coffee. At Cafe Casero ViBi, we take pride in offering high-quality coffee options for businesses, events, and coffee lovers who wish to enjoy our unique flavors in the comfort of their homes or workplaces.
       </p>
 
       <section className="mb-4 text-white">

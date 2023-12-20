@@ -23,7 +23,7 @@ export const HeroSection = () => {
 				</Button>
 			</div>
 			<div className="hero-image-container">
-				<Image src="/hero.png" alt="Coffee Shop" layout="fill" objectFit="cover" />
+				<Image src="/Hero-Image-Container.webp" alt="Coffee Shop" layout="fill" objectFit="cover" />
 			</div>
 
 			<Modal 

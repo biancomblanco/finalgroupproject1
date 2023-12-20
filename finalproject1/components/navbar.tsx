@@ -1,3 +1,4 @@
+"use client";
 import {
 	Navbar as NextUINavbar,
 	NavbarContent,
@@ -7,18 +8,16 @@ import {
 	NavbarItem,
 	NavbarMenuItem,
 } from "@nextui-org/navbar";
-import { Button } from "@nextui-org/button";
 import { Link } from "@nextui-org/link";
-
-import { link as linkStyles } from "@nextui-org/theme";
-
 import { siteConfig } from "@/config/site";
 import NextLink from "next/link";
-import clsx from "clsx";
-
 import { Logo } from "@/components/icons";
+import { Modal, ModalContent,  ModalProps, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure } from "@nextui-org/react";
+import Login from "./Login";
 
 export const Navbar = () => {
+
+	const { isOpen, onOpen, onOpenChange } = useDisclosure();
 	
 	return (
 		<NextUINavbar maxWidth="xl" position="sticky">
@@ -29,22 +28,27 @@ export const Navbar = () => {
 						<p className="font-head text-inherit">Cafe Casero ViBi</p>
 					</NextLink>
 				</NavbarBrand>
-				<ul className="hidden lg:flex gap-4 justify-start ml-2">
-					{siteConfig.navItems.map((item) => (
-						<NavbarItem key={item.href}>
-							<NextLink
-								className={clsx(
-									linkStyles({ color: "foreground" }),
-									"data-[active=true]:text-primary data-[active=true]:font-medium"
-								)}
-								color="foreground"
-								href={item.href}
-							>
-								{item.label}
-							</NextLink>
-						</NavbarItem>
-					))}
-				</ul>
+				<NavbarItem>
+					<Link className="font-column" color="foreground" href="/Menu">
+						Menu
+					</Link>
+				</NavbarItem>
+				<NavbarItem>
+					<Link className="font-column" color="foreground" href="#reward">
+						Rewards
+					</Link>
+				</NavbarItem>
+				<NavbarItem>
+					<Link className="font-column" color="foreground" href="#community">
+						Community
+					</Link>
+				</NavbarItem>
+				<NavbarItem>
+					<Link className="font-column" color="foreground" href="#about">
+						About Us
+					</Link>
+				</NavbarItem>
+				
 			</NavbarContent>
 
 			<NavbarContent
@@ -52,15 +56,30 @@ export const Navbar = () => {
 				justify="end"
 			>				
 				<NavbarItem className="hidden md:flex">
-					<Button
-                       isExternal
-						as={Link}
-						className="text-sm font-normal text-default-600 bg-default-100"
-						href={siteConfig.links.sponsor}
-						variant="flat"
-					>
+				<Link className="font-column" color="foreground" href="#" onPress={onOpen}>
 						Login
-					</Button>
+					</Link>
+					<Modal 
+        isOpen={isOpen} 
+        onOpenChange={onOpenChange}
+        placement="top-center"
+      >
+        <ModalContent>
+          {(onClose) => (
+            <>
+              <ModalHeader className="flex flex-col gap-1">Log in</ModalHeader>
+              <ModalBody>
+				<Login />
+              </ModalBody> 
+              <ModalFooter>
+                <Button color="danger" variant="flat" onPress={onClose}>
+                  Close
+                </Button>
+            </ModalFooter>
+            </>
+          )}
+        </ModalContent>
+      </Modal>
 				</NavbarItem>
 			</NavbarContent>
 
